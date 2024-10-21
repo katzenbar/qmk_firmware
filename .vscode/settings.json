@@ -10,6 +10,13 @@
         "**/*.uf2": true
     },
     "files.associations": {
+        "*.json.liquid": "json",
+        "*.yaml.liquid": "yaml",
+        "*.md.liquid": "markdown",
+        "*.js.liquid": "liquid-javascript",
+        "*.css.liquid": "liquid-css",
+        "*.scss.liquid": "liquid-scss",
+        "*.wxs": "xml",
         "*.h": "c",
         "*.c": "c",
         "*.inc": "c",
@@ -18,7 +25,8 @@
         "xstddef": "c",
         "type_traits": "c",
         "utility": "c",
-        "ranges": "c"
+        "ranges": "c",
+        "locale": "c"
     },
     "[markdown]": {
         "editor.trimAutoWhitespace": false,
@@ -28,7 +36,5 @@
     "[json]": {
         "editor.formatOnSave": false
     },
-    "clangd.arguments": [
-        "--header-insertion=never"
-    ]
+    "clangd.arguments": ["--header-insertion=never"]
 }
