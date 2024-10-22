@@ -1,12 +1,15 @@
 # handwired/katze_launchbox
 
-![handwired/katze_launchbox](imgur.com image replace me!)
+Presentation clicker given to a friend, with a key and switches to activate the big red button to go to the next slide.
 
-*A short description of the keyboard/project*
-
-* Keyboard Maintainer: [Kat Fairbanks](https://github.com/katzenbar)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+-   Keyboard Maintainer: [Kat Fairbanks](https://github.com/katzenbar)
+-   Hardware Supported: RP2040
+-   Hardware Availability:
+    -   [KB2040](https://www.adafruit.com/product/5302)
+    -   [Toggle Switch](https://www.adafruit.com/product/3218)
+    -   [Key Switch](https://www.adafruit.com/product/5929)
+    -   [Big Button](https://www.adafruit.com/product/1190)
+    -   [Small Buttons](https://www.adafruit.com/product/1479)
 
 Make example for this keyboard (after setting up your build environment):
 
@@ -22,6 +25,6 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 Enter the bootloader in 3 ways:
 
-* **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
-* **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
-* **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available
+-   **Bootmagic reset**: Hold down the BIG BUTTON and plug in the keyboard (key and toggle positions do not matter)
+-   **Physical reset button**: You'll have to crack open the box to get to this, but it should be possible to get the plate out of the snap fit with some force.
+-   **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available
